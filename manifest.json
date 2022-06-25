@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Confluence Search",
+  "version": "1.0",
+  "description": "Directly search the confluence site from your address bar",
+  "icons": {
+    "16": "confluence.ico",
+    "32": "confluence.ico",
+    "48": "confluence.ico"
+  },
+  "omnibox": {
+    "keyword": "!cs"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "confluence.ico",
+    "default_title": "Confluence Search",
+    "default_popup": "config.html",
+    "browser_style": true
+  }
+}
+  

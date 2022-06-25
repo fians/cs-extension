@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .form-group {
+        width: 300px;
+        box-sizing: border-box;
+        padding: 0px 10px;
+      }
+
+      .form-group label {
+        display: block;
+        margin: 5px 0px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .form-group input {
+        width: 274px;
+        display: block;
+        border: 1px solid #ddd;
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+
+      .form-group p {
+        font-size: 12px;
+        margin: 5px 0px;
+      }
+
+      .submit {
+        text-align: center;
+        width: 300px;
+      }
+
+      .submit button {
+        color: #000;
+      }
+
+      #success {
+        margin: 10px;
+        background: #0f0;
+        width: 274px;
+        font-size: 14px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="success">Setting has been saved.</div>
+    <div class="form-group">
+      <label>Subdomain</label>
+      <input type="text" id="subdomain" placeholder="i.e. acme">
+      <p>Your Confluence subdomain</p>
+    </div>
+    <div class="form-group">
+      <label>Filter by Spaces</label>
+      <input type="text" id="spaces" placeholder="i.e. ENG">
+      <p>Space-separated values of Confluence spaces code. When this value is set, filter by space will enable by default when you perform a search.</p>
+      <p>
+    </p></div>
+    <div class="submit"><button type="button">Save</button></div>
+    <script type="text/javascript" src="config.js"></script>
+  </body>
+</html>
